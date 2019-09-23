@@ -33,7 +33,20 @@
     buzzTextBox = document.getElementById("buzztext");
 
     document.getElementById(`button`).addEventListener(`click`, () => {
-      target.innerHTML = (`fizz:` + fizzTextBox.value);
+      target.innerHTML = (`fizz:` + fizzTextBox.value); 
+      // ↑document.getElementById(`button`).addEventListener(`click`・・が動作するか確認した
+
+      // 【動作メモ】
+      // ・入力フォームに記入された数値を二倍にする(3桁まで)
+      // ・Fizzの倍数であり、Buzzの倍数であるとき、FizzBuzzを記入
+      // →if (計算したもの % Fizz === 0 && 計算したもの % Buzz === 0)→Fizzbuzzと記入
+      // ・outputのdivを3桁になるまで増やすコード
+      // ・整数値以外を記入したら「整数値を入力してください」と表示させる
+
+
+      // 一番困っていること:入力フォームに記入された値を用いて計算がうまくできない
+      
+
       
 
 

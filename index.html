@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>FizzBuzz</title>
+ 
+</head>
+
+
+<body>
+  <h1>FizzBuzz問題</h1>
+
+  <form id="fizz">
+  FizzNum：<input type="text" id="fizztext" style="width: 150px" placeholder="整数値を入力してください">
+  </form>
+        
+  <form id="buzz">
+  BuzzNum：<input type="text" id="buzztext" style="width: 150px" placeholder="整数値を入力してください">
+  </form>
+  
+  <input type="button" id="button" value="実行">
+
+
+  <p>【出力】</p>
+  
+  <div id="output"></div>
+  
+
+
+  <script>
+    target = document.getElementById("output");
+    fizzTextBox = document.getElementById("fizztext");
+    buzzTextBox = document.getElementById("buzztext");
+
+    document.getElementById(`button`).addEventListener(`click`, () => {
+      target.innerHTML = (`fizz:` + fizzTextBox.value);
+      
+
+
+
+
+
+    });
+
+    
+</script>
+
+
+</body>
+</html>
